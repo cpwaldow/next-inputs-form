@@ -1,5 +1,5 @@
 import { Container, Title, FormStyle } from './style';
-import { Button, Input } from '@mui/material';
+import { Button, Input, TextField } from '@mui/material';
 
 const Form = () => {
   return (
@@ -25,16 +25,18 @@ const Form = () => {
           type='tel'
           sx={{ border: '1px solid black', p: 1 }}
         />
-        <input
+        <Input
           placeholder='CEP'
           type='text'
           inputMode='numeric'
-          pattern='[0-9]*'
+          inputProps={{ pattern: '[0-9]*' }}
+          sx={{ border: '1px solid black', p: 1 }}
         />
-        <input
+        <Input
           placeholder='Cartão de crédito'
           type='text'
-          inputMode='numeric'
+          inputProps={{ pattern: '[0-9]*' }}
+          sx={{ border: '1px solid black', p: 1 }}
         />
         <Button variant='contained'>teste</Button>
       </form>
