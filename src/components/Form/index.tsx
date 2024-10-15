@@ -25,18 +25,15 @@ const Form = () => {
           type='tel'
           sx={{ border: '1px solid black', p: 1 }}
         />
-        <Input
+        <input
           placeholder='CEP'
-          disableUnderline
           type='text'
-          sx={{ border: '1px solid black', p: 1 }}
           inputMode='numeric'
+          pattern='[0-9]*'
         />
-        <Input
+        <input
           placeholder='Cartão de crédito'
-          disableUnderline
           type='text'
-          sx={{ border: '1px solid black', p: 1 }}
           inputMode='numeric'
         />
         <Button variant='contained'>teste</Button>
